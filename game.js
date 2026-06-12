@@ -68,21 +68,21 @@ if (new URLSearchParams(window.location.search).has("fresh")) {
 }
 
 const achievementDefs = [
-  { id: "sneeze", title: { en: "Sneeze once", ko: "재채기하기" } },
-  { id: "brush15", title: { en: "Brush 15 times without being noticed", ko: "마리에게 걸리지 않고 빗질 15번 하기" } },
-  { id: "brush25", title: { en: "Brush 25 times in one run", ko: "한번에 25번 빗질하기" } },
+  { id: "sneeze", title: { en: "Sneeze once", ko: "재채기하기", zh: "打喷嚏" } },
+  { id: "brush15", title: { en: "Brush 15 times without being noticed", ko: "마리에게 걸리지 않고 빗질 15번 하기", zh: "不被发现地梳毛15次" } },
+  { id: "brush25", title: { en: "Brush 25 times in one run", ko: "한번에 25번 빗질하기", zh: "一局中梳毛25次" } },
 ];
 
 const achievementDefsByMode = {
   normal: [
-    { id: "sneeze", title: { en: "Sneeze once", ko: "\uc7ac\ucc44\uae30\ud558\uae30", ja: "\u304f\u3057\u3083\u307f\u3092\u3059\u308b" } },
-    { id: "brush15", title: { en: "Brush 15 times without being noticed", ko: "\ub9c8\ub9ac\uc5d0\uac8c \uac78\ub9ac\uc9c0 \uc54a\uace0 \ube57\uc9c8 15\ubc88 \ud558\uae30", ja: "\u30de\u30ea\u30fc\u306b\u898b\u3064\u304b\u3089\u305a15\u56de\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0" } },
-    { id: "brush25", title: { en: "Brush 25 times in one run", ko: "\ud55c\ubc88\uc5d0 25\ubc88 \ube57\uc9c8\ud558\uae30", ja: "1\u56de\u306725\u56de\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0" } },
+    { id: "sneeze", title: { en: "Sneeze once", ko: "\uc7ac\ucc44\uae30\ud558\uae30", ja: "\u304f\u3057\u3083\u307f\u3092\u3059\u308b", zh: "\u6253\u55b7\u568f" } },
+    { id: "brush15", title: { en: "Brush 15 times without being noticed", ko: "\ub9c8\ub9ac\uc5d0\uac8c \uac78\ub9ac\uc9c0 \uc54a\uace0 \ube57\uc9c8 15\ubc88 \ud558\uae30", ja: "\u30de\u30ea\u30fc\u306b\u898b\u3064\u304b\u3089\u305a15\u56de\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0", zh: "\u4e0d\u88ab\u53d1\u73b0\u5730\u68b3\u6bdb15\u6b21" } },
+    { id: "brush25", title: { en: "Brush 25 times in one run", ko: "\ud55c\ubc88\uc5d0 25\ubc88 \ube57\uc9c8\ud558\uae30", ja: "1\u56de\u306725\u56de\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0", zh: "\u4e00\u5c40\u4e2d\u68b3\u6bdb25\u6b21" } },
   ],
   infinite: [
-    { id: "share", title: { en: "Share Mari's brushing", ko: "\ub9c8\ub9ac \ube57\uc9c8\ud55c\uac70 \uc790\ub791\ud558\uae30", ja: "\u30de\u30ea\u30fc\u306e\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0\u3092\u81ea\u6162\u3059\u308b" } },
-    { id: "gameover5", title: { en: "Game over 5 times", ko: "\uac8c\uc784\uc624\ubc84 5\ubc88 \ub2f9\ud558\uae30", ja: "5\u56de\u30b2\u30fc\u30e0\u30aa\u30fc\u30d0\u30fc\u306b\u306a\u308b" } },
-    { id: "goldenFur", hidden: true, title: { en: "Found golden fur!", ko: "\ud669\uae08\ud138 \ubc1c\uacac\ud558\uae30!", ja: "\u91d1\u8272\u306e\u6bdb\u3092\u898b\u3064\u3051\u308b\uff01" } },
+    { id: "share", title: { en: "Share Mari's brushing", ko: "\ub9c8\ub9ac \ube57\uc9c8\ud55c\uac70 \uc790\ub791\ud558\uae30", ja: "\u30de\u30ea\u30fc\u306e\u30d6\u30e9\u30c3\u30b7\u30f3\u30b0\u3092\u81ea\u6162\u3059\u308b", zh: "\u5206\u4eab\u7ed9\u739b\u4e3d\u68b3\u6bdb" } },
+    { id: "gameover5", title: { en: "Game over 5 times", ko: "\uac8c\uc784\uc624\ubc84 5\ubc88 \ub2f9\ud558\uae30", ja: "5\u56de\u30b2\u30fc\u30e0\u30aa\u30fc\u30d0\u30fc\u306b\u306a\u308b", zh: "\u6e38\u620f\u7ed3\u675f5\u6b21" } },
+    { id: "goldenFur", hidden: true, title: { en: "Found golden fur!", ko: "\ud669\uae08\ud138 \ubc1c\uacac\ud558\uae30!", ja: "\u91d1\u8272\u306e\u6bdb\u3092\u898b\u3064\u3051\u308b\uff01", zh: "\u53d1\u73b0\u4e86\u91d1\u8272\u7684\u6bdb\uff01" } },
   ],
 };
 
@@ -154,9 +154,33 @@ text.ja = {
   resume: "再開",
   clearShine: "マリーの髪がつやつや！",
 };
+text.zh = {
+  best: "最佳",
+  retry: "重试",
+  nextLang: "English",
+  achievements: "成就",
+  startHelp: "在玛丽不注意的时候偷偷梳毛。",
+  start: "开始",
+  achievementToast: "成就达成",
+  unlocked: "解锁",
+  caught: "被发现了！",
+  notEnough: "梳毛次数不够...",
+  slowly: "慢一点！",
+  gameClear: "游戏通关",
+  loadFail: "资源加载失败。",
+  sneeze: "喷嚏",
+  score: "分数",
+  newBest: "新纪录！",
+  pause: "暂停",
+  resume: "继续",
+  clearShine: "玛丽的毛发变得光泽亮丽！",
+};
 achievementDefs[0].title.ja = "くしゃみをする";
 achievementDefs[1].title.ja = "マリーに見つからず15回ブラッシング";
 achievementDefs[2].title.ja = "1回で25回ブラッシング";
+achievementDefs[0].title.zh = "打喷嚏";
+achievementDefs[1].title.zh = "不被发现地梳毛15次";
+achievementDefs[2].title.zh = "一局中梳毛25次";
 
 Object.assign(text.en, {
   nextLang: "\ud55c\uad6d\uc5b4",
@@ -194,7 +218,7 @@ Object.assign(text.ko, {
 Object.assign(text.ja, {
   best: "\u30d9\u30b9\u30c8",
   retry: "\u3082\u3046\u4e00\u5ea6",
-  nextLang: "English",
+  nextLang: "简体中文",
   achievements: "\u5b9f\u7e3e",
   achievementToast: "\u5b9f\u7e3e\u89e3\u9664",
   caught: "\u898b\u3064\u304b\u3063\u305f\uff01",
@@ -216,15 +240,28 @@ Object.assign(text.ja, {
   creator: "X",
 });
 
+Object.assign(text.zh, {
+  share: "分享",
+  shareAsk: "保存游戏画面吗？",
+  yes: "是",
+  basic: "普通",
+  infinite: "无限",
+  infiniteTotal: "无限模式总分",
+  creator: "X",
+});
+
 text.en.creator = "CREATOR";
 text.ko.creator = "\uc81c\uc791\uc790";
 text.ja.creator = "\u5236\u4f5c\u8005";
+text.zh.creator = "\u5236\u4f5c\u8005";
 text.en.nextLang = "\ud55c\uad6d\uc5b4";
 text.ko.nextLang = "\u65e5\u672c\u8a9e";
-text.ja.nextLang = "English";
+text.ja.nextLang = "\u7b80\u4f53\u4e2d\u6587";
+text.zh.nextLang = "\ud55c\uad6d\uc5b4";
 text.en.infiniteUnlocked = "INFINITE MODE UNLOCKED";
 text.ko.infiniteUnlocked = "\ubb34\ud55c\ubaa8\ub4dc \ud574\uae08!";
 text.ja.infiniteUnlocked = "\u7121\u9650\u30e2\u30fc\u30c9\u89e3\u653e\uff01";
+text.zh.infiniteUnlocked = "\u65e0\u9650\u6a21\u5f0f\u5df2\u89e3\u9501\uff01";
 
 const assetPaths = {
   background: "assets/root/background.png",
@@ -573,7 +610,7 @@ function t(key) {
 }
 
 function uiFont(weight, size) {
-  const family = language === "ja" ? '"Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif' : "GyeonggiTitle, sans-serif";
+  const family = language === "ja" ? '"Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif' : language === "zh" ? '"Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif' : "GyeonggiTitle, sans-serif";
   return `${weight} ${size}px ${family}`;
 }
 
@@ -1616,7 +1653,7 @@ pauseButton.addEventListener("click", () => {
 languageToggle.addEventListener("click", () => {
   unlockAudio();
   playSound("language");
-  setLanguage(language === "en" ? "ko" : language === "ko" ? "ja" : "en");
+  setLanguage(language === "en" ? "ko" : language === "ko" ? "ja" : language === "ja" ? "zh" : "en");
 });
 volumeRange.value = String(Math.round(soundVolume * 100));
 volumeRange.addEventListener("input", () => {
