@@ -77,6 +77,11 @@ button {
   font-family: "Yu Gothic", "Meiryo", "Hiragino Sans", "Noto Sans JP", sans-serif;
 }
 
+:lang(zh) body,
+:lang(zh) button {
+  font-family: "Blueaka", "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
 button:active {
   transform: translateY(2px);
   box-shadow: 0 2px 0 #59333d;

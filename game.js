@@ -391,7 +391,7 @@ let infiniteBest = Number(localStorage.getItem(INFINITE_BEST_SCORE_KEY) || 0);
 let mode = "normal";
 let achievementsByMode = loadAllAchievements();
 let achievements = achievementsByMode.normal;
-let language = "en";
+let language = "zh";
 let masterRewardObject = { x: 658, y: 238, w: 154, h: 222, alpha: 0.8 };
 let infiniteGameOverCount = Number(localStorage.getItem(INFINITE_GAMEOVER_COUNT_KEY) || 0);
 let infiniteUnlocked = localStorage.getItem(INFINITE_UNLOCK_KEY) === "true";
@@ -610,7 +610,7 @@ function t(key) {
 }
 
 function uiFont(weight, size) {
-  const family = language === "ja" ? '"Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif' : language === "zh" ? '"Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif' : "GyeonggiTitle, sans-serif";
+  const family = language === "ja" ? '"Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif' : language === "zh" ? '"Blueaka", "Microsoft YaHei", "PingFang SC", sans-serif' : "GyeonggiTitle, sans-serif";
   return `${weight} ${size}px ${family}`;
 }
 
