@@ -156,7 +156,7 @@ text.ja = {
 };
 text.zh = {
   best: "最佳",
-  retry: "重试",
+  retry: "重玩",
   nextLang: "English",
   achievements: "成就",
   startHelp: "在玛丽不注意的时候偷偷梳毛。",
