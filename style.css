@@ -172,6 +172,8 @@ button:active {
 .stage-status {
   display: block;
   margin: 0 0 6px;
+  position: relative;
+  z-index: 10;
 }
 
 .pause-button {

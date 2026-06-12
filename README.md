@@ -4,7 +4,7 @@
 
 一个基于 HTML5 的休闲小游戏，在玛丽不注意的时候偷偷给她梳毛，同时积累分数并解锁成就。
 
-本游戏原作者为韩国画师 **HoR호르**，原托管于 [itch.io](https://horuhara.itch.io/brush-mari) 海外平台。出于众所周知的原因，原站在国内可能无法正常访问。作为粉丝，为了让更多人能玩到这款游戏，我将网站的运行环境搬运至国内，并配置了 CDN 加速，确保能达到秒开的效果。
+本游戏原作者为韩国画师 **HoR호르**，原托管于 [itch.io](https://horuhara.itch.io/brush-mari) 海外平台。出于众所周知的原因，原站在国内可能无法正常访问。作为粉丝，为了让更多人能玩到这款游戏，我将网站的运行环境搬运至国内，删除了会导致游戏无法游玩的反盗链代码，并配置了 CDN 加速，确保能达到秒开的效果。
 
 加速地址：[https://game.xcnahida.cn/brush-mari/](https://game.xcnahida.cn/brush-mari/)
 
@@ -40,7 +40,6 @@ brush-mari-by-horuhara/
 ├── index.html           # 游戏主页面
 ├── style.css            # 游戏样式
 ├── game.js              # 游戏核心逻辑
-├── htmlgame.js          # HTML5 游戏辅助
 ├── icon.png             # 图标
 ├── assets/              # 静态资源
 │   ├── calm/            # 玛丽平静状态素材
